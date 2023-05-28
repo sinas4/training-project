@@ -24,7 +24,9 @@ void main() {
         ChangeNotifierProvider(
           create: (context) => CryptoDataProvider(),
         ),
-          ChangeNotifierProvider(create: (context) => MarketViewProvider()),
+        ChangeNotifierProvider(
+          create: (context) => MarketViewProvider(),
+        ),
       ],
       child: const MyMaterialApp(
           /*  localizationsDelegates: [

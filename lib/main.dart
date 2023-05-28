@@ -1,4 +1,5 @@
 import 'package:exchange/providers/CryptoDataProvider.dart';
+import 'package:exchange/providers/MarketViewProvider.dart';
 import 'package:exchange/providers/ThemeProvider.dart';
 import 'package:exchange/ui/Main_Wrapper.dart';
 import 'package:flutter/foundation.dart';
@@ -23,6 +24,7 @@ void main() {
         ChangeNotifierProvider(
           create: (context) => CryptoDataProvider(),
         ),
+          ChangeNotifierProvider(create: (context) => MarketViewProvider()),
       ],
       child: const MyMaterialApp(
           /*  localizationsDelegates: [
